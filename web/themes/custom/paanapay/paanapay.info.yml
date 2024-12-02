@@ -1,0 +1,22 @@
+name: paanapay
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - paanapay/base
+  - paanapay/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - paanapay/user
+  core/drupal.dropbutton:
+    - paanapay/dropbutton
+  core/drupal.dialog:
+    - paanapay/dialog
+  file/drupal.file:
+    - paanapay/file
+  core/drupal.progress:
+    - paanapay/progress
+description: ''
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.3.10'
