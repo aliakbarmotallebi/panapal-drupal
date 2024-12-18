@@ -8,7 +8,8 @@
 /**
  * Implements hook_preprocess_image_widget().
  */
-function paanapay_preprocess_image_widget(array &$variables) {
+function paanapay_preprocess_image_widget(array &$variables)
+{
   $data = &$variables['data'];
 
   // This prevents image widget templates from rendering preview container HTML
@@ -18,4 +19,33 @@ function paanapay_preprocess_image_widget(array &$variables) {
   if (isset($data['preview']['#access']) && $data['preview']['#access'] === FALSE) {
     unset($data['preview']);
   }
+}
+
+
+/**
+ * Implements hook_form_system_theme_settings_alter().
+ */
+function paanapay_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id = NULL)
+{
+
+  // Work-around for a core bug affecting admin themes. See issue #943212.
+  if (isset($form_id)) {
+    return;
+  }
+
+  //Contact Number
+  $form['contact_number'] = [
+    '#type' => 'textfield',
+    '#title' => t('Contact Number'),
+    '#default_value' => theme_get_setting('contact_number'),
+    '#description'   => t("Enter your Contact Number."),
+  ];
+
+  //Email
+  $form['email'] = [
+    '#type' => 'email',
+    '#title' => t('Email'),
+    '#default_value' => theme_get_setting('email'),
+    '#description'   => t("Enter your Email Address."),
+  ];
 }

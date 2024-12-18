@@ -1,22 +1,26 @@
 name: paanapay
+description: A starter kit theme for Drupal 8/9 and Tailwind CSS.
+core_version_requirement: ^8 || ^9 || ^10
 type: theme
-'base theme': stable9
-version: 1.0.0
+base theme: stable9
 libraries:
-  - paanapay/base
-  - paanapay/messages
-  - core/normalize
-libraries-extend:
-  user/drupal.user:
-    - paanapay/user
-  core/drupal.dropbutton:
-    - paanapay/dropbutton
-  core/drupal.dialog:
-    - paanapay/dialog
-  file/drupal.file:
-    - paanapay/file
-  core/drupal.progress:
-    - paanapay/progress
-description: ''
-core_version_requirement: ^10
-generator: 'starterkit_theme:10.3.10'
+- paanapay/global-styling
+- paanapay/global-scripts
+regions:
+  highlighted: 'Highlighted'
+  breadcrumb: 'Breadcrumb'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  content: 'Content'
+  header: 'Header'
+  hero: 'Hero Section'
+  services: 'Services'
+  blogs: 'Blogs'
+  partners: 'Partners'
+  footer: 'Footer'
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom'
+
+twig:
+  namespaces:
+    paanapay: templates/
