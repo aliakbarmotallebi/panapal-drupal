@@ -1,0 +1,8 @@
+uuid: 8f3fae29-4396-41f8-aa5e-dad2c6e0b1f8
+langcode: fa
+status: true
+dependencies: {  }
+id: learn-more
+label: 'بیشتر بدانید'
+description: ''
+locked: false

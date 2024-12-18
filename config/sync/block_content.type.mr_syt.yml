@@ -1,0 +1,8 @@
+uuid: 830c356c-60c6-4545-923d-2bbe7ca4414d
+langcode: en
+status: true
+dependencies: {  }
+id: mr_syt
+label: 'امار سایت'
+revision: false
+description: سایت

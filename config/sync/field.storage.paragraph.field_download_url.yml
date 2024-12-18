@@ -1,0 +1,19 @@
+uuid: 2d9b56e8-93df-40db-b670-15a1af7c057b
+langcode: fa
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_download_url
+field_name: field_download_url
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

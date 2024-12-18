@@ -1,0 +1,23 @@
+uuid: 405052ae-d54d-433c-8a25-7a13f40cc251
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - paanapay
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: paanapay_search_form_wide
+theme: paanapay
+region: highlighted
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

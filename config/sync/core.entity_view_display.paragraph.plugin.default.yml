@@ -1,0 +1,58 @@
+uuid: 4f003b2e-51e1-462e-b17f-1428480fb1f6
+langcode: fa
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.plugin.field_description
+    - field.field.paragraph.plugin.field_download_url
+    - field.field.paragraph.plugin.field_image_logo
+    - field.field.paragraph.plugin.field_plugin_name
+    - paragraphs.paragraphs_type.plugin
+  module:
+    - image
+    - link
+    - text
+id: paragraph.plugin.default
+targetEntityType: paragraph
+bundle: plugin
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_download_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_plugin_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 64705a90-4902-4ade-b327-97667f47a700
+langcode: en
+status: false
+dependencies:
+  theme:
+    - paanapay
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: paanapay_secondary_local_tasks
+theme: paanapay
+region: highlighted
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 906680bf-852b-41ee-99fc-f6df9f2a1349
+langcode: fa
+status: true
+dependencies: {  }
+id: quick-links
+label: 'لینک‌های مهم'
+description: ''
+locked: false

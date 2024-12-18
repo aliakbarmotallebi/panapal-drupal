@@ -1,0 +1,21 @@
+uuid: 23bd8053-0e6b-4b6a-ae92-c3da5aded3aa
+langcode: fa
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_status
+    - paragraphs.paragraphs_type.partners
+id: paragraph.partners.field_status
+field_name: field_status
+entity_type: paragraph
+bundle: partners
+label: Status
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

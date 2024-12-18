@@ -1,0 +1,22 @@
+uuid: 01187d09-be30-4471-b69d-68266d4736fd
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - paanapay
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: paanapay_help
+theme: paanapay
+region: highlighted
+weight: 3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

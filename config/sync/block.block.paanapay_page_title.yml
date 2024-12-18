@@ -1,0 +1,20 @@
+uuid: 20f9af4a-7d88-46f0-a9d2-e20ce6180996
+langcode: en
+status: false
+dependencies:
+  theme:
+    - paanapay
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: paanapay_page_title
+theme: paanapay
+region: highlighted
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

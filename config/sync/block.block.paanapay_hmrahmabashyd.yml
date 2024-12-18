@@ -1,0 +1,25 @@
+uuid: b89125aa-cc61-466d-a98a-ffe0e1578724
+langcode: fa
+status: true
+dependencies:
+  config:
+    - system.menu.join-us
+  module:
+    - system
+  theme:
+    - paanapay
+id: paanapay_hmrahmabashyd
+theme: paanapay
+region: footer_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:join-us'
+settings:
+  id: 'system_menu_block:join-us'
+  label: 'همراه ما باشید'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

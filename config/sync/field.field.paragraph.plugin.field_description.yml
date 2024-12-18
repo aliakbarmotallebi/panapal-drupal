@@ -1,0 +1,22 @@
+uuid: 838dd997-bc4d-4fe3-afad-5d80b42cc4a4
+langcode: fa
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.plugin
+  module:
+    - text
+id: paragraph.plugin.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: plugin
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

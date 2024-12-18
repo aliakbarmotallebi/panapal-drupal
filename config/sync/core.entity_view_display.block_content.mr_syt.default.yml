@@ -1,0 +1,23 @@
+uuid: 4cf009c6-d0b0-4ff0-ae6d-77dfb07ea447
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mr_syt
+    - field.field.block_content.mr_syt.body
+  module:
+    - text
+id: block_content.mr_syt.default
+targetEntityType: block_content
+bundle: mr_syt
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

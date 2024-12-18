@@ -1,0 +1,19 @@
+uuid: e3827b78-d544-461f-b491-3b565ea27d61
+langcode: fa
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_plugin_name
+    - paragraphs.paragraphs_type.plugin
+id: paragraph.plugin.field_plugin_name
+field_name: field_plugin_name
+entity_type: paragraph
+bundle: plugin
+label: 'Plugin Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

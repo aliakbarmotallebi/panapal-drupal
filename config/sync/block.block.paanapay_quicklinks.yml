@@ -1,0 +1,25 @@
+uuid: fc90881b-4381-4b12-9cc0-d4e294ab5a6c
+langcode: fa
+status: true
+dependencies:
+  config:
+    - system.menu.quick-links
+  module:
+    - system
+  theme:
+    - paanapay
+id: paanapay_quicklinks
+theme: paanapay
+region: footer_top
+weight: -7
+provider: null
+plugin: 'system_menu_block:quick-links'
+settings:
+  id: 'system_menu_block:quick-links'
+  label: 'لینک سریع'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

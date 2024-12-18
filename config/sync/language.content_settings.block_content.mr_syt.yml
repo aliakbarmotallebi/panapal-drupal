@@ -1,0 +1,11 @@
+uuid: 787436b0-7e8a-4c47-b85f-72e473588808
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mr_syt
+id: block_content.mr_syt
+target_entity_type_id: block_content
+target_bundle: mr_syt
+default_langcode: site_default
+language_alterable: false

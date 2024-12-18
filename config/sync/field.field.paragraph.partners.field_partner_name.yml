@@ -1,0 +1,19 @@
+uuid: ffbb33d2-1c4c-4720-8735-6bbd574dac09
+langcode: fa
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_partner_name
+    - paragraphs.paragraphs_type.partners
+id: paragraph.partners.field_partner_name
+field_name: field_partner_name
+entity_type: paragraph
+bundle: partners
+label: 'Partner Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

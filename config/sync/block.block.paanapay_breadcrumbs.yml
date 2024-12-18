@@ -1,0 +1,22 @@
+uuid: 8b5b6a82-d22c-4e58-9c06-dfa4d04da33a
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - paanapay
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: paanapay_breadcrumbs
+theme: paanapay
+region: highlighted
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

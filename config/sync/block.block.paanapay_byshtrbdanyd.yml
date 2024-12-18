@@ -1,0 +1,25 @@
+uuid: b0c5f5f3-397d-4249-9a10-70e16ba220f0
+langcode: fa
+status: true
+dependencies:
+  config:
+    - system.menu.learn-more
+  module:
+    - system
+  theme:
+    - paanapay
+id: paanapay_byshtrbdanyd
+theme: paanapay
+region: footer_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:learn-more'
+settings:
+  id: 'system_menu_block:learn-more'
+  label: 'بیشتر بدانید'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

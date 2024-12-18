@@ -1,0 +1,23 @@
+uuid: 27619550-88fa-442d-aceb-e79589bebbc2
+langcode: fa
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_website_url
+    - paragraphs.paragraphs_type.partners
+  module:
+    - link
+id: paragraph.partners.field_website_url
+field_name: field_website_url
+entity_type: paragraph
+bundle: partners
+label: 'Website URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

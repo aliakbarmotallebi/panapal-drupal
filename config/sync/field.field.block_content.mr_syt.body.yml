@@ -1,0 +1,24 @@
+uuid: 93ad8d79-960c-42b1-b17b-341baa4992b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mr_syt
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.mr_syt.body
+field_name: body
+entity_type: block_content
+bundle: mr_syt
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

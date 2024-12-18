@@ -1,0 +1,10 @@
+uuid: d8895a2b-b86d-423c-93ff-734a34dc6ea5
+langcode: fa
+status: true
+dependencies: {  }
+id: plugin
+label: Plugin
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
