@@ -20,6 +20,9 @@
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",
         "drupal/devel": "^5.3",
+        "drupal/entity_usage": "^2.0@beta",
+        "drupal/entity_usage_light": "^2.0",
+        "drupal/paragraph_blocks": "^4.1",
         "drupal/paragraphs": "^1.18",
         "drupal/vite": "^1.3",
         "drush/drush": "^13.3"
