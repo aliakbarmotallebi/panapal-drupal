@@ -18,8 +18,9 @@
     title_display == 'invisible' ? 'visually-hidden',
     required ? 'js-form-required',
     required ? 'form-required',
+    'mb-1 font-medium text-gray-500 block'
   ]
 %}
 {% if title is not empty or required -%}
-  <label{{ attributes.addClass(classes) }}>{{ title }}</label>
+	<label{{attributes.addClass(classes)}}>{{ title }}</label>
 {%- endif %}
