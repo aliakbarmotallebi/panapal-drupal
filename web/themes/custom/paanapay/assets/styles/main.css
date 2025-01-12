@@ -3,7 +3,7 @@
 
 @layer base {
   body {
-    @apply bg-zinc-200/30 font-yekanbakh;
+    @apply bg-white font-yekanbakh;
   }
   * {
     scroll-behavior: smooth;
