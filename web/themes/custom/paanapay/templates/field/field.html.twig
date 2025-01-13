@@ -53,29 +53,36 @@
   ]
 %}
 
+{% 
+  set class__items = [
+    'field__items',
+    'my-8 flex w-full flex-wrap items-center gap-2 text-sm font-medium text-slate-600'
+  ]
+%}
+
 {% if label_hidden %}
-  {% if multiple %}
-    <div{{ attributes.addClass(classes, 'field__items') }}>
-      {% for item in items %}
-        <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
-      {% endfor %}
-    </div>
-  {% else %}
-    {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field__item') }}>{{ item.content }}</div>
-    {% endfor %}
-  {% endif %}
+	{% if multiple %}
+		<ul{{attributes.addClass(classes,class__items)}}>
+			{% for item in items %}
+				<li{{item.attributes.addClass('field__item')}}>{{ item.content }}</li>
+			{% endfor %}
+		</div>
+	{% else %}
+		{% for item in items %}
+			<ul{{attributes.addClass(classes,'field__item')}}>{{ item.content }}</ul>
+		{% endfor %}
+	{% endif %}
 {% else %}
-  <div{{ attributes.addClass(classes) }}>
-    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
-    {% if multiple %}
-      <div class="field__items">
-    {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
-    {% endfor %}
-    {% if multiple %}
-      </div>
-    {% endif %}
-  </div>
+	<div{{attributes.addClass(classes)}}>
+		<div{{title_attributes.addClass(title_classes)}}>{{ label }}</div>
+		{% if multiple %}
+			<ul{{attributes.addClass(class__items)}}>
+			{% endif %}
+			{% for item in items %}
+				<li{{item.attributes.addClass('field__item')}}>{{ item.content }}</li>
+			{% endfor %}
+			{% if multiple %}
+			</div>
+		{% endif %}
+	</div>
 {% endif %}

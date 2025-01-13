@@ -12,7 +12,11 @@
 #}
 {%
 set classes = [
+  'w-full rounded-md object-cover',
   style_name ? 'image-style-' ~ style_name|clean_class,
 ]
 %}
-<img{{ attributes.addClass(classes) }} />
+
+<figure class="w-full">
+	<img{{attributes.addClass(classes)}}/>
+</figure>

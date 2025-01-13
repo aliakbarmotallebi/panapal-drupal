@@ -1,21 +1,7 @@
 <div class="page page-front">
 	{% include directory ~ '/templates/partials/header.html.twig' %}
-	{# <section class="flex justify-center">
-					<div class="flex w-full flex-col items-center">
-						<div class="flex w-full flex-col items-center">
-							<div class="relative flex h-96 w-full items-center justify-center gap-2 bg-gradient-to-t from-blue-900 to-blue-700 p-4">
-								<div class="faq-header-bg absolute right-0 top-0 h-full w-full opacity-50"></div>
-								<h2 class="relative z-20 py-4 text-5xl font-extrabold text-slate-50">
-									{{ title }}
-								</h2>
-							</div>
-						</div>
-					</div>
-				</section> #}
-	{# Main Content Section #}
-		<main class="main-content"> <div class="container">
-			{{ page.content }}
-		</div>
+	<main class="main-content container mx-auto">
+		{{ page.content }}
 	</main>
 	{% include directory ~ '/templates/partials/footer.html.twig' %}
 </div>
